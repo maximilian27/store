@@ -12,35 +12,36 @@
   <script src="script.js"></script>
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="600">
 
 <nav class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="197">
-		<div class="container-fluid">
-			<div class="navbar-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>                        
 			</button>
 			<a class="navbar-brand" href="">Store</a>
+		</div>
+		<div>
+			<div class="collapse navbar-collapse " id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#section1">Products</a></li>
+					<li><a href="#section2">Deals</a></li>
+					<li><a href="#section3">Clients</a></li>
+					<li><a href="#section4">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right navbar-form" >
+					<li><a data-toggle="modal" href="#accountModal"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+					<li><a class="cart-link" href="#" title="Cart is empty.."><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a><span class="badge badge-notify hidden"></span></li>
+				</ul>
 			</div>
-			<div>
-				<div class="collapse navbar-collapse " id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#section1">Products</a></li>
-						<li><a href="#section2">Deals</a></li>
-						<li><a href="#section3">Clients</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right navbar-form" >
-						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-						<li><a class="cart-link" href="#" title="Cart is empty.."><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a><span class="badge badge-notify hidden"></span></li>
-						
-					</ul>
-				</div>
-			</div>
-	  </div>
+		</div>
+	</div>
 </nav>  
+
 <div id="home">
 	<div style="position:relative;">
 	  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:55px 80px;background: linear-gradient(-90deg, #767676, #000000);opacity: 0.85;">
@@ -64,211 +65,278 @@
 	  </div>
 	</div>
 	
-	<div style="color: #777;background-color:white;text-align:center;padding:5px 50px 5px 50px;" >
+	<div style="" class="slideanim home-banner">
 		<h3><strong>If you always dreamed to look like a rockstar, if fashion is your thing, maybe you just want to make your haters cry. This is it, the right place, you've found the Holly Grail. Now, let's buy some stuff you don't need. From now on, you can pay even with bitcoins...</strong></h3>
 	</div>
 </div>	
 
 <div id="section1">
 	<div class="bgimg-2">
-	  <div class="caption ">
-		<span class="border" style="background-color:transparent;font-size:45px;color: #f7f7f7;">Our products</span>
-	  </div>
-	</div>
-
-
-	<div style="position:relative;color:#ddd;background-color:#282E34;text-align:center;padding:25px 40px;" class="slideanim">
-		<div class="item-background">
-		  <h3><strong>Jeans</strong></h3>
-		  <div class="row slideanim">
-			<div class="col-xs-12 col-sm-4 ">
-			  <div class="panel">
-				<div class="panel-heading">Blue Jeans</div>
-				<div class="panel-body"><img src="img/blue-jeans.jpg" class="img-responsive" alt="Image"></div>
-				<div class="panel-footer text-center">
-					<h5>PRICE: <span class="old-price">$40.12</span></h5>
-					<h4>$42.0</h4>
-					<button type="button" class="btn btn-danger add-to-cart ">Add to cart</button>
-				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12 col-sm-4 ">
-			  <div class="panel">
-				<div class="panel-heading">Black Jeans</div>
-				<div class="panel-body"><img src="img/black-jeans.jpg" class="img-responsive"  alt="Image"></div>
-				<div class="panel-footer text-center">
-					<h5>PRICE: <span class="old-price">$45.45</span></h5>
-					<h4>$50.02</h4>
-					<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
-				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12 col-sm-4 ">
-			  <div class="panel">
-				<div class="panel-heading">Ugly Jeans</div>
-				<div class="panel-body"><img src="img/ugly-jeans1.jpg" class="img-responsive"  alt="Image"></div>
-				<div class="panel-footer text-center">
-					<h5>PRICE: <span class="old-price">$200.01</span></h5>
-					<h4>$221.3</h4>
-					<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		   <h3><strong>T-shirts</strong></h3>
-		  <div class="row slideanim">
-			<div class="col-xs-12 col-sm-4">
-			  <div class="panel">
-				<div class="panel-heading">T-shirt1</div>
-				<div class="panel-body"><img src="img/shirt1.jpg" class="img-responsive" alt="Image"></div>
-				<div class="panel-footer text-center">
-					<h5>PRICE: <span class="old-price">$15.32</span></h5>
-					<h4>$17.56</h4>
-					<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
-				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12 col-sm-4"> 
-			  <div class="panel">
-				<div class="panel-heading">T-shirt2</div>
-				<div class="panel-body"><img src="img/shirt2.jpg" class="img-responsive"  alt="Image"></div>
-				<div class="panel-footer text-center">
-					<h5>PRICE: <span class="old-price">$21.67</span></h5>
-					<h4>$23.15</h4>
-					<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
-				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12 col-sm-4"> 
-			  <div class="panel">
-				<div class="panel-heading">T-shirt3</div>
-				<div class="panel-body"><img src="img/shirt3.jpg" class="img-responsive" alt="Image"></div>
-				<div class="panel-footer text-center">
-					<h5>PRICE: <span class="old-price">$16.69</span></h5>
-					<h4>$16.80</h4>
-					<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
-				</div>
-			  </div>
-			</div>
-		  </div>
-
+		<div class="caption ">
+			<span class="border" >Our products</span>
 		</div>
 	</div>
 
+	<div style="" class="slideanim products-banner">
+		<div class="item-background">
+			<h3><strong>Jeans</strong></h3>
+			<div class="row slideanim">
+				<div class="col-xs-12 col-sm-4 ">
+					<div class="panel">
+						<div class="panel-heading">Blue Jeans</div>
+						<div class="panel-body"><img src="img/blue-jeans.jpg" class="img-responsive" alt="Image"></div>
+						<div class="panel-footer text-center">
+							<h5>PRICE: <span class="old-price">$40.12</span></h5>
+							<h4>$42.0</h4>
+							<button type="button" class="btn btn-danger add-to-cart ">Add to cart</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 ">
+					<div class="panel">
+						<div class="panel-heading">Black Jeans</div>
+						<div class="panel-body"><img src="img/black-jeans.jpg" class="img-responsive"  alt="Image"></div>
+						<div class="panel-footer text-center">
+							<h5>PRICE: <span class="old-price">$45.45</span></h5>
+							<h4>$50.02</h4>
+							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 ">
+					 <div class="panel">
+						<div class="panel-heading">Ugly Jeans</div>
+						<div class="panel-body"><img src="img/ugly-jeans1.jpg" class="img-responsive"  alt="Image"></div>
+						<div class="panel-footer text-center">
+							<h5>PRICE: <span class="old-price">$200.01</span></h5>
+							<h4>$221.3</h4>
+							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
+						</div>
+					 </div>
+				</div>
+			</div>
+			
+			<h3><strong>T-shirts</strong></h3>
+			<div class="row slideanim">
+				<div class="col-xs-12 col-sm-4">
+					<div class="panel">
+						<div class="panel-heading">T-shirt1</div>
+						<div class="panel-body"><img src="img/shirt1.jpg" class="img-responsive" alt="Image"></div>
+						<div class="panel-footer text-center">
+							<h5>PRICE: <span class="old-price">$15.32</span></h5>
+							<h4>$17.56</h4>
+							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
+						</div>
+					 </div>
+				</div>
+				<div class="col-xs-12 col-sm-4"> 
+					<div class="panel">
+						<div class="panel-heading">T-shirt2</div>
+						<div class="panel-body"><img src="img/shirt2.jpg" class="img-responsive"  alt="Image"></div>
+						<div class="panel-footer text-center">
+							<h5>PRICE: <span class="old-price">$21.67</span></h5>
+							<h4>$23.15</h4>
+							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4"> 
+					<div class="panel">
+						<div class="panel-heading">T-shirt3</div>
+						<div class="panel-body"><img src="img/shirt3.jpg" class="img-responsive" alt="Image"></div>
+						<div class="panel-footer text-center">
+							<h5>PRICE: <span class="old-price">$16.69</span></h5>
+							<h4>$16.80</h4>
+							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>	
+
 <div id="section2">	
 	<div class="bgimg-3">
-	  <div class="caption">
-		<span class="border" style="background-color:transparent;font-size:25px;color: red;"><strong>Get the best deal today</strong></span>
-	  </div>
+		<div class="caption">
+			<span class="border" ><strong>Get the best deal today</strong></span>
+		</div>
 	</div>
 
-	<div style="position:relative;color:#ddd;background-color:#282E34;text-align:center;padding:25px 40px;" class="slideanim">
-	  <div class="item-background">
-		<div class="row slideanim">
-			<div class="col-xs-12 col-sm-4">
-			  <div class="panel">
-				<div class="panel-heading">BLACK FRIDAY DEAL</div>
-				<div class="panel-body">If you order at least two items, you can pay for the third one later.</div>
-				<div class="panel-footer text-center">
-					<a href="#section1"><button type="button" class="btn btn-danger order-now">Order now</button></a>
+	<div style="" class="slideanim deals-banner">
+		<div class="item-background">
+			<div class="row slideanim">
+				<div class="col-xs-12 col-sm-4">
+					<div class="panel">
+						<div class="panel-heading">BLACK FRIDAY DEAL</div>
+						<div class="panel-body">If you order at least two items, you can pay for the third one later.</div>
+						<div class="panel-footer text-center">
+							<a href="#section1"><button type="button" class="btn btn-danger order-now">Order now</button></a>
+						</div>
+					</div>
 				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12 col-sm-4"> 
-			  <div class="panel">
-				<div class="panel-heading">BLACK FRIDAY DEAL</div>
-				<div class="panel-body">Order over $70 now and you will receive a nice christmas card.</div>
-				<div class="panel-footer text-center">
-					<a href="#section1"><button type="button" class="btn btn-danger order-now">Order now</button></a>
+				<div class="col-xs-12 col-sm-4"> 
+					<div class="panel">
+						<div class="panel-heading">BLACK FRIDAY DEAL</div>
+						<div class="panel-body">Order over $70 now and you will receive a nice christmas card.</div>
+						<div class="panel-footer text-center">
+							<a href="#section1"><button type="button" class="btn btn-danger order-now">Order now</button></a>
+						</div>
+					</div>
 				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12 col-sm-4"> 
-			  <div class="panel">
-				<div class="panel-heading">BLACK FRIDAY DEAL</div>
-				<div class="panel-body">Order over $100 today and we will pe pack your clothes in a plastic bag.</div>
-				<div class="panel-footer text-center">
-					<a href="#section1"><button type="button" class="btn btn-danger order-now">Order now</button></a>
+				<div class="col-xs-12 col-sm-4"> 
+					<div class="panel">
+						<div class="panel-heading">BLACK FRIDAY DEAL</div>
+						<div class="panel-body">Order over $100 today and we will pe pack your clothes in a plastic bag.</div>
+						<div class="panel-footer text-center">
+							<a href="#section1"><button type="button" class="btn btn-danger order-now">Order now</button></a>
+						</div>
+					</div>
 				</div>
-			  </div>
 			</div>
-		  </div>
-	  </div>
+		</div>
 	</div>
-
-
-	<div class="bgimg-1">
-	  <div class="caption slideanim">
-		 <h2 class="border">What our customers say</h2>
-		  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-		
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-			  <div class="item active">
-				<h4>"Wow! onlineStore clothes are so loren ipsum dolor sit amet, consectetur adipiscing."<br><span>Aurel Pop, CEO, socialMedia/Romania</span></h4>
-			  </div>
-			  <div class="item">
-				<h4>"Thank you onlineStore. These clothes definetely made me a better person."<br><span>John O'Hara, Drummer, The Unicorns</span></h4>
-			  </div>
-			  <div class="item">
-				<h4>"This is awesome:x! Even my mother-in-law loves me now. I will recommend it to everybody."<br><span>Amanda Johnson, Reporter, localNews-station</span></h4>
-			  </div>
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
-		  </div>
 </div>
 
-	  </div>
-	</div>
-</div>	
-
 <div id="section3">	
-	<footer class="container-fluid page-footer" >
-		<div class="col-sm-12 col-xs-12 col-lg-5 col-md-4 text-center contact-us"> 
-			<h3><strong>Contact us</strong></h3>
-			<p>Contact us and we'll get back to you within 24 hours.</p>
-			<p><span class="glyphicon glyphicon-map-marker"></span> Cluj-Napoca, Romania</p>
-			<p><span class="glyphicon glyphicon-phone"></span> 074xxxxxxx</p>
-			<p><span class="glyphicon glyphicon-envelope"></span> online.Store@mail.com</p>
-			<h4><a href="#demo" data-toggle="collapse">Leave a message...</a></h4>
-				<div id="demo" class="collapse">
-					<form >
-					  <div class="row">
-						<div class="form-group" style="max-width:24em;margin:auto;padding:0.5em;">
-						  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-						</div>
-						<div class="form-group" style="max-width:24em;margin:auto;padding:0.5em;">
-						  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-						</div>
-					  </div>
-					  <div class=" row" style="max-width:24em;margin:auto;padding:0.5em;">
-					  <textarea style="" class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-						<div class=" form-group">
-						  <button class="btn btn-danger" style="width:14em;" type="submit">Send</button>
-						</div>
-					  </div>
-					</form>
-				</div>	
+	<div class="bgimg-1">
+		<div class="caption-clients slideanim">
+			<!-- <div style="background-color: black;color: white;"> -->
+				<!-- <h1>Our customers</h1> -->
+				<!-- <div class="row text-center slideanim"> -->
+					<!-- <div class="col-sm-4"> -->
+						<!-- <p><strong>Paris</strong></p> -->
+					<!-- </div> -->
+					<!-- <div class="col-sm-4"> -->
+						<!-- <p><strong>New York</strong></p> -->
+					<!-- </div> -->
+					<!-- <div class="col-sm-4"> -->
+						<!-- <p><strong>Cluj-Napoca</strong></p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<h1 class="border">What our customers say</h1>
+			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h4>"Wow! onlineStore clothes are so loren ipsum dolor sit amet, consectetur adipiscing."<br><span>Aurel Pop, CEO, socialMedia/Romania</span></h4>
+					</div>
+					<div class="item">
+						<h4>"Thank you onlineStore. These clothes definetely made me a better person."<br><span>John O'Hara, Drummer, The Unicorns</span></h4>
+					</div>
+					<div class="item">
+						<h4>"This is awesome:x! Even my mother-in-law loves me now. I will recommend it to everybody."<br><span>Amanda Johnson, Reporter, localNews-station</span></h4>
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
 		</div>
-		<div id="googleMap" class="col-sm-12 col-xs-12 col-lg-7 col-md-8 google-map" ></div>
-		<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 text-center " style="padding-top:10px;border-top: 1px solid red;background-color: #252525;">
-			<p>Copyright 2017 BlablaBla</p>
+		
+	</div>
+</div>
+
+<div id="section4">	
+	<footer class="container-fluid page-footer" >
+		<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+			<div class="col-sm-6 col-xs-12 col-lg-6 col-md-6 text-center contact-us"> 
+				<h3><strong>Contact us</strong></h3>
+				<p>Contact us and we'll get back to you within 24 hours.</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> Cluj-Napoca, Romania</p>
+				<p><span class="glyphicon glyphicon-phone"></span> 074xxxxxxx</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> online.Store@mail.com</p>
+			</div>
+			<div class="col-sm-6 col-xs-12 col-lg-6 col-md-6 center-block">
+				<form>
+					<div class="row reply-form center-block" style="">
+						<div class="form-group" >
+							<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+						</div>
+						<div class="form-group" >
+							<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+						</div>
+						<textarea style="" class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+						<div class=" form-group">
+							<button class="btn btn-danger reply-btn center-block" style="" type="submit">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div><br>
+		<div id="googleMap" class="col-sm-12 col-xs-12 col-lg-12 col-md-12 google-map" ></div>
+		<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 copyright" style="">
+			<p>Copyright 2018 BlablaBla</p>
 			<p>You can download, edit, upgrade etc this page anyawy you please. It's free sadly...</p>
 			<p><a href="https://github.com/maximilian27/store">Here</a> you can find the full source code.</p>
 		</div>
 	</footer>
-</div>		
+</div>	
+	<div class="modal fade" id="accountModal" role="dialog">
+		<div class="modal-dialog">
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			    <ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#login">LOGIN</a></li>
+					<li ><a data-toggle="tab" href="#register">SIGN UP</a></li>
+				</ul><br>
+				<div class="tab-content">
+					<div id="login" class="tab-pane fade in active">
+						<button type="button" class="btn btn-primary btn-lg center-block">LOGIN with Facebook</button>
+						<h2>OR</h2>
+						<form>
+							<div class="row">
+								<div class="form-group form-account">
+									<input class="form-control" id="email-login" name="emailLogin" placeholder="email.." type="email" required>
+								</div>
+								<div class="form-group form-account">
+									<input class="form-control" id="pwd-login" name="pwdLogin" placeholder="password.." type="password" required>
+								</div>
+								<div class=" form-group">
+									<button type="submit" class="btn btn-default center-block account-sm-btns">LOGIN</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div id="register" class="tab-pane fade">
+						<button type="button" class="btn btn-primary btn-lg center-block">SIGN UP with Facebook</button>
+						<h2>OR</h2>
+						<form>
+							<div class="row">
+								<div class="form-group form-account">
+									<input class="form-control" id="first-name" name="firtName" placeholder="first name.." type="text" required>
+								</div>
+								<div class="form-group form-account">
+									<input class="form-control" id="last-name" name="lastName" placeholder="last name.." type="text" required>
+								</div>
+								<div class="form-group form-account">
+									<input class="form-control" id="email-signup" name="emailSignup" placeholder="email.." type="email" required>
+								</div>
+								<div class="form-group form-account">
+									<input class="form-control" id="pwd-signup" name="pwdSignup" placeholder="password.." type="password" required>
+								</div>
+								<div class=" form-group">
+									<button type="submit" class="btn btn-default center-block account-sm-btns">SIGN UP</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+	
+	
 <script>
 
 function myMap() {
