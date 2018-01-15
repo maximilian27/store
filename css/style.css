@@ -195,6 +195,7 @@ h3 {
 
 .old-price {
 	text-decoration: line-through;
+	margin-bottom: -1em;
 }
 
 a {
@@ -297,6 +298,11 @@ textarea {
 	border-radius: 20px;
 }
 
+.modal-header {
+	background-color: black;
+	color: white;
+}
+
 .modal-body {
 	background-color: black;
 }
@@ -358,6 +364,19 @@ h2 {
 	text-align: center
 }
 
+.delete-item {
+	float: right;
+	background: transparent;
+	border: none;
+	font-size: 0.8em;
+	font-weight: 900;
+	color: white;
+	opacity: 0.8;
+}
+
+.delete-item:hover {
+	color: red;
+}
 /* Turn off parallax scrolling for tablets and phones */
 @media (max-width: 990px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
