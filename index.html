@@ -35,7 +35,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right navbar-form" >
 					<li><a data-toggle="modal" href="#accountModal"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-					<li><a class="cart-link" href="#" title="Cart is empty.."><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a><span class="badge badge-notify hidden"></span></li>
+					<li><a data-toggle="modal" class="cart-link" href="#cartModal" title="Cart is empty.."><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a><span class="badge badge-notify hidden"></span></li>
 				</ul>
 			</div>
 		</div>
@@ -83,33 +83,33 @@
 			<div class="row slideanim">
 				<div class="col-xs-12 col-sm-4 ">
 					<div class="panel">
-						<div class="panel-heading">Blue Jeans</div>
+						<div class="panel-heading item-name">Blue Jeans</div>
 						<div class="panel-body"><img src="img/blue-jeans.jpg" class="img-responsive" alt="Image"></div>
 						<div class="panel-footer text-center">
 							<h5>PRICE: <span class="old-price">$40.12</span></h5>
-							<h4>$42.0</h4>
+							<h4>$<span class="item-price">42.0</span></h4>
 							<button type="button" class="btn btn-danger add-to-cart ">Add to cart</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 ">
 					<div class="panel">
-						<div class="panel-heading">Black Jeans</div>
+						<div class="panel-heading item-name">Black Jeans</div>
 						<div class="panel-body"><img src="img/black-jeans.jpg" class="img-responsive"  alt="Image"></div>
 						<div class="panel-footer text-center">
 							<h5>PRICE: <span class="old-price">$45.45</span></h5>
-							<h4>$50.02</h4>
+							<h4>$<span class="item-price">50.02</span></h4>
 							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 ">
 					 <div class="panel">
-						<div class="panel-heading">Ugly Jeans</div>
+						<div class="panel-heading item-name">Ugly Jeans</div>
 						<div class="panel-body"><img src="img/ugly-jeans1.jpg" class="img-responsive"  alt="Image"></div>
 						<div class="panel-footer text-center">
 							<h5>PRICE: <span class="old-price">$200.01</span></h5>
-							<h4>$221.3</h4>
+							<h4>$<span class="item-price">221.3</span></h4>
 							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
 						</div>
 					 </div>
@@ -120,33 +120,33 @@
 			<div class="row slideanim">
 				<div class="col-xs-12 col-sm-4">
 					<div class="panel">
-						<div class="panel-heading">T-shirt1</div>
+						<div class="panel-heading item-name">T-shirt1</div>
 						<div class="panel-body"><img src="img/shirt1.jpg" class="img-responsive" alt="Image"></div>
 						<div class="panel-footer text-center">
 							<h5>PRICE: <span class="old-price">$15.32</span></h5>
-							<h4>$17.56</h4>
+							<h4>$<span class="item-price">17.56</span></h4>
 							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
 						</div>
 					 </div>
 				</div>
 				<div class="col-xs-12 col-sm-4"> 
 					<div class="panel">
-						<div class="panel-heading">T-shirt2</div>
+						<div class="panel-heading item-name">T-shirt2</div>
 						<div class="panel-body"><img src="img/shirt2.jpg" class="img-responsive"  alt="Image"></div>
 						<div class="panel-footer text-center">
 							<h5>PRICE: <span class="old-price">$21.67</span></h5>
-							<h4>$23.15</h4>
+							<h4>$<span class="item-price">23.15</span></h4>
 							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4"> 
 					<div class="panel">
-						<div class="panel-heading">T-shirt3</div>
+						<div class="panel-heading item-name">T-shirt3</div>
 						<div class="panel-body"><img src="img/shirt3.jpg" class="img-responsive" alt="Image"></div>
 						<div class="panel-footer text-center">
 							<h5>PRICE: <span class="old-price">$16.69</span></h5>
-							<h4>$16.80</h4>
+							<h4>$<span class="item-price">16.80</span></h4>
 							<button type="button" class="btn btn-danger add-to-cart">Add to cart</button>
 						</div>
 					</div>
@@ -278,13 +278,14 @@
 		</div>
 	</footer>
 </div>	
-	<div class="modal fade" id="accountModal" role="dialog">
-		<div class="modal-dialog">
-		  <!-- Modal content-->
-		  <div class="modal-content">
+<!-- account modal -->
+<div class="modal fade" id="accountModal" role="dialog">
+	<div class="modal-dialog">
+	  <!-- Modal content-->
+		<div class="modal-content">
 			<div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-			    <ul class="nav nav-tabs">
+				<ul class="nav nav-tabs">
 					<li class="active"><a data-toggle="tab" href="#login">LOGIN</a></li>
 					<li ><a data-toggle="tab" href="#register">SIGN UP</a></li>
 				</ul><br>
@@ -324,7 +325,7 @@
 									<input class="form-control" id="pwd-signup" name="pwdSignup" placeholder="password.." type="password" required>
 								</div>
 								<div class=" form-group">
-									<button type="submit" class="btn btn-default center-block account-sm-btns">SIGN UP</button>
+									<!-- <button type="submit" class="btn btn-default center-block account-sm-btns">SIGN UP</button> -->
 								</div>
 							</div>
 						</form>
@@ -332,11 +333,31 @@
 				</div>
 			</div>
 			<div class="modal-footer"></div>
-			</div>
 		</div>
 	</div>
-	
-	
+</div>
+<!-- cart modal	 -->
+<div class="modal fade" id="cartModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+				<h4 class="modal-title">Cart items</h4>
+			</div>
+			<div class="modal-body">
+				<ol class="cart-item">
+					<!-- <li>blabla</li> -->
+					<!-- <li>blabla2</li> -->
+				</ol>
+				<p class="total-cost"></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+      
+    </div>
+ </div>	
 <script>
 
 function myMap() {
@@ -348,13 +369,43 @@ function myMap() {
 	marker.setMap(map);
 }
 
+
+var totalSum = 0;
 var i=0;
+
 $('.add-to-cart').click(function() {
 	i++;
 	$('.badge-notify').removeClass('hidden');
 	$('.badge-notify').text(i);
 	$('.cart-link').attr('title', '');
+	
+		<!-- add items to cart list.. -->
+		var itemName = $(this).closest('.panel').find('.item-name').text();
+		var price = $(this).closest('.panel').find('.item-price').text();
+			<!-- alert(itemName + ' ' + price); -->
+			var cartItem = $('<li class="list-item"></li>');
+			cartItem.html('<a href="#section1">' + itemName + ' / ' + '<span class="elem-price">' + price + '</span>' + '</a>' + '<button type="button" class="delete-item">X</button>');
+			$('.cart-item').after(cartItem);
+				totalSum += Number(price);
+				$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
+				
+		<!-- delete items from cart -->
+		var j=i;
+		$('.delete-item').click(function(event) {
+			j--;
+			i=0;
+			$('.badge-notify').text(j);
+			$(this).closest('.list-item').remove();
+			var price2 = $(this).closest('.list-item').find('.elem-price').text();
+			alert(price2);
+			totalSum -= Number(price2);
+			$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
+				if ($('.cart-item').text() == 0) {$('.badge-notify').addClass('hidden');$('.total-cost').html('Total price: ' + '0');totalSum = 0;}
+			event.stopPropagation();
+		});
 });	
+
+
 
 $('#search-button').click(function() {
 	var blahblah = $('#name-search').val();
