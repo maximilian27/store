@@ -384,7 +384,7 @@ $('.add-to-cart').click(function() {
 		var price = $(this).closest('.panel').find('.item-price').text();
 			var cartItem = $('<li class="list-item"></li>');
 			cartItem.html('<a href="#section1">' + itemName + ' / ' + '<span class="elem-price">' + price + '</span>' + '</a>' + '<button type="button" class="delete-item">X</button>');
-			$('.cart-item').after(cartItem);
+			$('.cart-item').append(cartItem);
 				totalSum += Number(price);
 				$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
 				
@@ -392,6 +392,7 @@ $('.add-to-cart').click(function() {
 		var j=i;
 		$('.delete-item').click(function() {
 			j--;
+			i = j;
 			console.log(j);
 			$('.badge-notify').text(j);
 			$(this).closest('.list-item').remove();
@@ -399,7 +400,7 @@ $('.add-to-cart').click(function() {
 			<!-- alert(price2); -->
 			totalSum -= Number(price2);
 			$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
-				<!-- if ($('.cart-item li').length == 0) {$('.badge-notify').addClass('hidden');} -->
+				<!-- if (i == 0) {$('.badge-notify').addClass('hidden');} -->
 		});
 });	
 
