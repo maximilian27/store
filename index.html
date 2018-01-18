@@ -389,6 +389,7 @@ $('.add-to-cart').click(function() {
 				$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
 				
 		<!-- delete items from cart -->
+		var totalSum2 = totalSum;
 		var j=i;
 		$('.delete-item').click(function() {
 			j--;
@@ -398,8 +399,8 @@ $('.add-to-cart').click(function() {
 			$(this).closest('.list-item').remove();
 			var price2 = $(this).closest('.list-item').find('.elem-price').text();
 			<!-- alert(price2); -->
-			totalSum -= Number(price2);
-			$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
+			totalSum2 -= Number(price2);
+			$('.total-cost').html('Total price: ' + totalSum2.toFixed(2));
 				<!-- if (i == 0) {$('.badge-notify').addClass('hidden');} -->
 		});
 });	
