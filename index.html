@@ -42,26 +42,24 @@
 </nav>  
 
 <div id="home">
-	<div style="position:relative;">
-	  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:55px 80px;background: linear-gradient(-90deg, #767676, #000000);opacity: 0.85;">
+	<div class="welcome">
 		<h4>Welcome to onlineStore, the greatest Online Chothes Store. <br> Here you can find anything that you need and more...</h4>
 		<form class="form-group input-group col-sm-5" style="margin:auto" >
 			<input type="text" class="form-control" id="name-search" placeholder="Search store..." value="">
-				<span class="input-group-btn">
-					<button class="btn btn-default" id="search-button" type="button">
-					<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>        
+			<span class="input-group-btn">
+				<button class="btn btn-default" id="search-button" type="button">
+				<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</span>        
 		</form>
 		<span id="search-text"></span>
-	  </div>
 	</div>
 	
 	<div class="bgimg-1">
-	  <div class="caption">
-		<span class="border">SCROLL DOWN</span><br>
-		<span class="glyphicon glyphicon-chevron-down"></span>
-	  </div>
+		<div class="caption">
+			<span class="border">SCROLL DOWN</span><br>
+			<span class="glyphicon glyphicon-chevron-down"></span>
+		</div>
 	</div>
 	
 	<div style="" class="slideanim home-banner">
@@ -200,20 +198,6 @@
 <div id="section3">	
 	<div class="bgimg-1">
 		<div class="caption-clients slideanim">
-			<!-- <div style="background-color: black;color: white;"> -->
-				<!-- <h1>Our customers</h1> -->
-				<!-- <div class="row text-center slideanim"> -->
-					<!-- <div class="col-sm-4"> -->
-						<!-- <p><strong>Paris</strong></p> -->
-					<!-- </div> -->
-					<!-- <div class="col-sm-4"> -->
-						<!-- <p><strong>New York</strong></p> -->
-					<!-- </div> -->
-					<!-- <div class="col-sm-4"> -->
-						<!-- <p><strong>Cluj-Napoca</strong></p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </div> -->
 			<h1 class="border">What our customers say</h1>
 			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
 				<div class="carousel-inner" role="listbox">
@@ -340,14 +324,10 @@
     <div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div class="modal-header">
-				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 				<h4 class="modal-title">Cart items</h4>
 			</div>
 			<div class="modal-body cart-modal-body">
-				<ol class="cart-item">
-					<!-- <li>blabla</li> -->
-					<!-- <li>blabla2</li> -->
-				</ol>
+				<ol class="cart-item"></ol>
 				<p class="total-cost"></p>
 			</div>
 			<div class="modal-footer">

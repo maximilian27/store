@@ -139,6 +139,7 @@ body, html {
 	border: 1px solid red;
 	border-radius: 15px;
 }  
+
 .caption h1.border {
 	background-color: #111;
 	color: #fff;
@@ -148,7 +149,16 @@ body, html {
 
 }  
 
-.home-banner{
+.welcome {
+	position: relative;
+	color: #ddd;
+	text-align: center;
+	padding:55px 80px; 
+	background: linear-gradient(-90deg, #767676, #000000);
+	opacity: 0.85;
+}
+
+.home-banner {
 	color: #777;
 	background-color: white;
 	text-align: center;
