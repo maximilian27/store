@@ -377,6 +377,11 @@ h2 {
 .delete-item:hover {
 	color: red;
 }
+
+.cart-modal-body {
+	max-height: 15em;
+	overflow-y: scroll;
+}
 /* Turn off parallax scrolling for tablets and phones */
 @media (max-width: 990px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
