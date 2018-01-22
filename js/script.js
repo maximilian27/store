@@ -17,7 +17,7 @@ $('.add-to-cart').click(function() {
 	$('.badge-notify').text(i);
 	$('.cart-link').attr('title', '');
 	
-		<!-- add items to cart list.. -->
+		 // add items to cart list.. 
 		var itemName = $(this).closest('.panel').find('.item-name').text();
 		var price = $(this).closest('.panel').find('.item-price').text();
 			var cartItem = $('<li class="list-item"></li>');
@@ -26,20 +26,18 @@ $('.add-to-cart').click(function() {
 				totalSum += Number(price);
 				$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
 				
-		<!-- delete items from cart -->
+		// delete items from cart
 		var totalSum2 = totalSum;
 		var j=i;
 		$('.delete-item').click(function() {
 			j--;
-			i = j;
-			console.log(j);
 			$('.badge-notify').text(j);
 			$(this).closest('.list-item').remove();
 			var price2 = $(this).closest('.list-item').find('.elem-price').text();
-			<!-- alert(price2); -->
 			totalSum2 -= Number(price2);
 			$('.total-cost').html('Total price: ' + totalSum2.toFixed(2));
-				<!-- if (i == 0) {$('.badge-notify').addClass('hidden');} -->
+				i = j;
+				totalSum = totalSum2;
 		});
 });	
 
