@@ -9,7 +9,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="script.js"></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="600">
@@ -344,7 +343,7 @@
 				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 				<h4 class="modal-title">Cart items</h4>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body cart-modal-body">
 				<ol class="cart-item">
 					<!-- <li>blabla</li> -->
 					<!-- <li>blabla2</li> -->
@@ -358,77 +357,7 @@
       
     </div>
  </div>	
-<script>
-
-function myMap() {
-	var myCenter = new google.maps.LatLng(46.775686, 23.609428);
-	var mapCanvas = document.getElementById('googleMap');
-	var mapOptions = {center: myCenter, zoom: 8, mapTypeId: google.maps.MapTypeId.HYBRID};
-	var map = new google.maps.Map(mapCanvas, mapOptions);
-	var marker = new google.maps.Marker({position:myCenter});
-	marker.setMap(map);
-}
-
-
-var totalSum = 0.00;
-var i=0;
-
-$('.add-to-cart').click(function() {
-	i++;
-	$('.badge-notify').removeClass('hidden');
-	$('.badge-notify').text(i);
-	$('.cart-link').attr('title', '');
-	
-		<!-- add items to cart list.. -->
-		var itemName = $(this).closest('.panel').find('.item-name').text();
-		var price = $(this).closest('.panel').find('.item-price').text();
-			var cartItem = $('<li class="list-item"></li>');
-			cartItem.html('<a href="#section1">' + itemName + ' / ' + '<span class="elem-price">' + price + '</span>' + '</a>' + '<button type="button" class="delete-item">X</button>');
-			$('.cart-item').append(cartItem);
-				totalSum += Number(price);
-				$('.total-cost').html('Total price: ' + totalSum.toFixed(2));
-				
-		<!-- delete items from cart -->
-		var totalSum2 = totalSum;
-		var j=i;
-		$('.delete-item').click(function() {
-			j--;
-			i = j;
-			console.log(j);
-			$('.badge-notify').text(j);
-			$(this).closest('.list-item').remove();
-			var price2 = $(this).closest('.list-item').find('.elem-price').text();
-			<!-- alert(price2); -->
-			totalSum2 -= Number(price2);
-			$('.total-cost').html('Total price: ' + totalSum2.toFixed(2));
-				<!-- if (i == 0) {$('.badge-notify').addClass('hidden');} -->
-		});
-});	
-
-
-
-$('#search-button').click(function() {
-	var blahblah = $('#name-search').val();
-	<!-- alert(blahblah); -->
-	$('#search-text').html("We don't have " + "<strong>" + "'" + blahblah + "'"+ "</strong>" + " in our store..." + "<br>" + "Try again another time.").css('color', 'red');
-});
-
-$(document).ready(function() {	
-	$(window).scroll(function() {
-		$(".slideanim").each(function(){
-		  var pos = $(this).offset().top;
-
-		  var winTop = $(window).scrollTop();
-			if (pos < winTop + 700) {
-			  $(this).addClass("slide");
-			}
-		});
-	});
-})
-
-
-
-</script>
+<script src="js/script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIU6QGvSxy2-4K5EfuOu_2_RZUBzdM_XM&callback=myMap"></script>
 
 </body>
