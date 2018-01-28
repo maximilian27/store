@@ -45,7 +45,6 @@ function myMap() {
 
 $('#search-button').click(function() {
 	var blahblah = $('#name-search').val();
-	<!-- alert(blahblah); -->
 	$('#search-text').html("We don't have " + "<strong>" + "'" + blahblah + "'"+ "</strong>" + " in our store..." + "<br>" + "Try again another time.").css('color', 'red');
 });
 
